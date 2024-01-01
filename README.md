@@ -206,16 +206,37 @@ Now, check the data of each image using `less exif_data.txt`
 
 
 ## PhoneInfoga
-PhoneInfoga
+PhoneInfoga is an OSINT tool used to scan international phone numbers. It allows you to first gather basic information such as country, area, carrier and line type, then use various techniques to try to find the VoIP provider or identify the owner.
 
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
+
 
 ### ⚙️ Setup
-Write the following code to install the tool on Kali:
+Download the latest release of PhoneInfoga:
 ```
+bash <( curl -sSL https://raw.githubusercontent.com/sundowndev/phoneinfoga/master/support/scripts/install )
 ```
-Use ``
+Move directory:
+```
+sudo mv ./phoneinfoga /usr/local/bin/phoneinfoga
+```
+To check if PhoneInfoga is running properly:
+```
+phoneinfoga
+```
+Use the `scan` command with the `-n` (or `--number`) option:
+```
+phoneinfoga scan -n "+1 (555) 444-1212"
+phoneinfoga scan -n "+33 06 79368229"
+phoneinfoga scan -n "33679368229"
+```
+Special chars such as `( ) - +` will be escaped so US-based numbers can be used easily:
+```
+phoneinfoga scan -n "+1 555-444-3333"
+```
 
+For further help, you may refer to the 
+* [PhoneInfoga GitHub](https://github.com/sundowndev/phoneinfoga) repository.
+* [PhoneInfoga Website](https://sundowndev.github.io/phoneinfoga/getting-started/install/).
 
 ## Osintgram
 Osintgram is an OSINT tool on Instagram. It offers an interactive shell to perform analysis on the Instagram account of any user by its nickname.

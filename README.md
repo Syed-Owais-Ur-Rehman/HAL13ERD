@@ -22,13 +22,13 @@ HAL13ERD is a Kali virtual machine created with the intent to gather various OSI
 ## OSINT Tools
 
 The following tools used in the project are listed below:
-* [Sherlock](##Sherlock)
+* [Sherlock](#Sherlock)
 * TheHarvester
 * GHunt
 * Social_mapper
 * EXIF Tool
 * PhoneInfoga
-* [Osintgram](##Osintgram)
+* [Osintgram](#Osintgram)
 
 ## Sherlock
 Sherlock, a powerful command line tool used to find usernames across many social networks.

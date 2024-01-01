@@ -119,7 +119,7 @@ ghunt email <email_address>
 ```
 You can also use --json with email, gaia and drive modules to export in JSON
 ```
-$ ghunt email <email_address> --json user_data.json
+ghunt email <email_address> --json user_data.json
 ```
 
 
@@ -127,13 +127,44 @@ For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) r
 
 
 ## Social_mapper
-Social Mapper 
+Social Mapper is an Open Source Intelligence Tool that uses facial recognition to correlate social media profiles across different sites on a large scale. 
 
 ### ⚙️ Setup
-Write the following code to install the tool on Kali:
+
+Get the non-ESR version of Firefox with:
 ```
+sudo add-apt-repository ppa:mozillateam/firefox-next && sudo apt update && sudo apt upgrade
 ```
-Use ``
+
+Download the latest version of Geckodriver here:
+```
+https://github.com/mozilla/geckodriver/releases
+```
+Install Geckodriver and copy the file to **/usr/bin/**:
+```
+cd Downloads/
+tar -xvzf <geckodriver tar installer name>.gz
+sudo cp geckodriver /usr/bin/
+```
+Install the following prerequisites:
+```
+sudo apt-get install build-essential cmake
+sudo apt-get install libgtk-3-dev
+sudo apt-get install libboost-all-dev
+```
+Finish installation with:
+```
+git clone https://github.com/Greenwolf/social_mapper
+cd social_mapper/setup
+python3 -m pip install --no-cache-dir -r requirements.txt
+```
+Now `cd ..` and run:
+```
+python social_mapper.py -h
+```
+Paste your target image in the imagefolder(**social_mapper/Input-Examples/imagefolder/**) before executing any social_mapper OSINt peration
+
+
 
 For further help, you may refer to the [social_mapper](https://github.com/Greenwolf/social_mapper) repository.
 

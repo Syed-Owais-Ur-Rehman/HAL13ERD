@@ -1,7 +1,7 @@
 # HAL13ERD
 
 <p align="center">
-<img align="center" src=".img/HAL13ERD_logo.png" width="900">
+<img align="left" src="./img/HAL13ERD_logo.png" width="300" alt="project logo">
 </p>
 
 <br>
@@ -10,19 +10,25 @@
 
 HAL13ERD is a Kali virtual machine created with the intent to gather various OSINT tools to perform basic OSINT investigations. This project's objective is to replicate the once-known Buscador Virtual Machine by creating your version.
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 > [!NOTE]
-> This project was only created for OSINT on dummy accounts for educational purposes.
+> This project was created for educational purposes. OSINT tasks were executed on dummy accounts.
 
 ## OSINT Tools
 
 The following tools used in the project are listed below:
-* Sherlock
+* [Sherlock](##Sherlock)
 * TheHarvester
 * GHunt
 * Social_mapper
 * EXIF Tool
 * PhoneInfoga
-* Osintgram
+* [Osintgram](##Osintgram)
 
 ## Sherlock
 Sherlock, a powerful command line tool used to find usernames across many social networks.
@@ -30,17 +36,17 @@ Sherlock, a powerful command line tool used to find usernames across many social
 ### ⚙️ Setup
 Write the following code to install the tool on Kali:
 
-clone the repo
+Clone the repository:
 ```
 git clone https://github.com/sherlock-project/sherlock.git
 ```
 
-Navigate to the directory
+Navigate to the directory:
 ```
 cd sherlock
 ```
 
-install the requirements
+Install the requirements:
 ```
 python3 -m pip install -r requirements.txt
 ```

@@ -23,11 +23,11 @@ HAL13ERD is a Kali virtual machine created with the intent to gather various OSI
 
 The following tools used in the project are listed below:
 * [Sherlock](#Sherlock)
-* TheHarvester
-* GHunt
-* Social_mapper
-* EXIF Tool
-* PhoneInfoga
+* [TheHarvester](#theHarvester)
+* [GHunt](#GHunt)
+* [Social_Mapper](#Social_mapper)
+* [EXIF Tool](#EXIF-Tool)
+* [PhoneInfoga](#PhoneInfoga)
 * [Osintgram](#Osintgram)
 
 ## Sherlock

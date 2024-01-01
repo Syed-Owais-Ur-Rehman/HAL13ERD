@@ -21,8 +21,7 @@ The following tools used in the project are listed below:
 * Osintgram
 
 ## Sherlock
-Sherlock 
-
+Sherlock, a powerful command line tool used to find usernames across many social networks.
 
 ### Setup
 Write the following code to install the tool on Kali:
@@ -88,13 +87,34 @@ For further help, you may refer to the [social_mapper](https://github.com/Greenw
 
 
 ## EXIF Tool
-EXIF Tool
+EXIF Tool is a platform-independent command-line application for reading, writing, and editing meta information in a wide variety of files. This script version is created by David Bombal.
 
 ### Setup
 Write the following code to install the tool on Kali:
+
+Create a new EXIF Tool directory and move inside it. 
 ```
+mkdir exiftool
+cd exiftool
 ```
-Use ``
+Create an **images** folder using `mkdir images` and add the target .jpg images inside it.
+
+> [!NOTE]
+> This program is for .JPG and .TIFF format files only.
+
+Install pip for python3 and Pillow (Pillow will not work if you have PIL installed).
+```
+sudo apt install python3-pip 
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade Pillow
+```
+
+Create an **exif.py** file and paste the code from the [EXIF TOOL](https://github.com/davidbombal/red-python-scripts/blob/main/exif.py) repository
+
+run the following to execute the python script
+python3 exif.py
+Now, check the data of each image using `less exif_data.txt`
+
 
 
 ## PhoneInfoga

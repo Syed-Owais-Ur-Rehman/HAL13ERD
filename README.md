@@ -1,5 +1,9 @@
 # HAL13ERD
 
+<p align="center">
+<img align="center" src=".img/" width="900">
+</p>
+
 <br>
 
 ## Description
@@ -31,7 +35,7 @@ clone the repo
 git clone https://github.com/sherlock-project/sherlock.git
 ```
 
-change the working directory to sherlock
+Navigate to the directory
 ```
 cd sherlock
 ```
@@ -65,7 +69,7 @@ GHunt is an offensive Google framework, currently focused on OSINT. It is used t
 
 ### ⚙️ Setup
 :
-Clone the GHunt repository and move into the directory:
+Clone the GHunt repository and navigate to the directory:
 ```
 git clone https://github.com/mxrch/GHunt.git    
 cd GHunt
@@ -176,7 +180,7 @@ EXIF Tool is a platform-independent command-line application for reading, writin
 ### ⚙️ Setup
 Write the following code to install the tool on Kali:
 
-Create a new EXIF Tool directory and move inside it. 
+Create a new EXIF Tool directory and navigate to the directory. 
 ```
 mkdir exiftool
 cd exiftool
@@ -214,13 +218,46 @@ Use ``
 
 
 ## Osintgram
-Osintgram is an OSINT tool on Instagram. It offers an interactive shell to perform analysis on the Instagram account of any user by its nickname
-
-
+Osintgram is an OSINT tool on Instagram. It offers an interactive shell to perform analysis on the Instagram account of any user by its nickname.
 
 ### ⚙️ Setup
+Clone the repository:
+```
+git clone https://github.com/Datalux/Osintgram.git
+```
+Navigate to the directory:
+```
+cd Osintgram
+```
+In the *config* directory go to **credentials.ini** and add the username and password of your account.
 
+<br>
+
+Do the following steps to avoid any runtime errors.
+
+> [!IMPORTANT]
+> * In the *Osintgram* directory, open **main.py** and replace every ***gnureadline*** keyword with ***readline***.
+> * Then, go to the *src* directory open in **Osintgram.py**. Comment the *line 61* which reads ***self.following = self.check_following()*** to ***#self.following = self.check_following()***.
+
+<br>
+
+Create a virtual environment for this project:
 ```
+python3 -m venv venv
 ```
-Use ``
+Load the virtual environment:
+```
+source venv/bin/activate
+```
+Install the requirements for Osintgram:
+```
+pip install -r requirements.txt
+```
+
+Run the following to start the tool:
+```
+python3 main.py <target_username>
+```
+Use `list` to list down the commands available to use in Osintgram.
+
 For further help, you may refer to the [Osintgram](https://github.com/Datalux/Osintgram) repository.

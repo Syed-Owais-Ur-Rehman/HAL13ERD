@@ -1,7 +1,7 @@
 # HAL13ERD
 
 <p align="center">
-<img align="center" src=".img/" width="900">
+<img align="center" src=".img/HAL13ERD_logo.png" width="900">
 </p>
 
 <br>

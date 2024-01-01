@@ -214,12 +214,13 @@ Use ``
 
 
 ## Osintgram
-Osintgram
+Osintgram is an OSINT tool on Instagram. It offers an interactive shell to perform analysis on the Instagram account of any user by its nickname
 
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
+
 
 ### ⚙️ Setup
-Write the following code to install the tool on Kali:
+
 ```
 ```
 Use ``
+For further help, you may refer to the [Osintgram](https://github.com/Datalux/Osintgram) repository.

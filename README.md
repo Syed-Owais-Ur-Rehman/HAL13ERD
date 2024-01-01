@@ -23,7 +23,7 @@ The following tools used in the project are listed below:
 ## Sherlock
 Sherlock, a powerful command line tool used to find usernames across many social networks.
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 
 clone the repo
@@ -50,7 +50,7 @@ theHarvester performs open source intelligence (OSINT) gathering to help determi
 a domain's external threat landscape. The tool gathers names, emails, IPs, subdomains, and URLs by using multiple public resources.
 
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 ```
 sudo apt install theharvester
@@ -60,15 +60,66 @@ Use `theHarvester -h` to list all possible commands that can be used.
 For further help, you may refer to [theHarvester](https://www.kali.org/tools/theharvester/).
 
 ## GHunt
-GHunt
+GHunt is an offensive Google framework, currently focused on OSINT. It is used to extract Gmail ID details.
 
 
-
-### Setup
-Write the following code to install the tool on Kali:
+### ⚙️ Setup
+:
+Clone the GHunt repository and move into the directory:
 ```
+git clone https://github.com/mxrch/GHunt.git    
+cd GHunt
 ```
-Use ``
+Install the requirements for GHunt:
+```
+sudo pip3 install -r requirements.txt
+```
+
+Install **pipx** to install ghunt:
+```
+cd $HOME
+pip3 install pipx
+pipx ensurepath
+pipx install ghunt
+```
+
+First, launch the listener by doing `ghunt login` and choose between 1 of the 2 first methods :
+
+> [!TIP]
+> **Option 1** is recommended as it is easier method for gmail login.
+
+```
+$ ghunt login
+
+[1] (Companion) Put GHunt on listening mode
+[2] (Companion) Paste base64-encoded cookies
+[3] Enter manually all cookies
+
+Choice =>
+```
+
+
+Then, use GHunt Companion to complete the login.
+
+The extension is available in the following stores :\
+\
+[![Firefox](https://files.catbox.moe/5g2ld5.png)](https://addons.mozilla.org/en-US/firefox/addon/ghunt-companion/)&nbsp;&nbsp;&nbsp;[![Chrome](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/ghunt-companion/dpdcofblfbmmnikcbmmiakkclocadjab)
+
+> [!NOTE]
+> After login, your Gmail credentials are stored in **ghunt/creds.m **.
+
+
+Use `ghunt -h` to list all possible commands that can be used.
+
+To get details on target email:
+```
+ghunt email <email_address>
+```
+You can also use --json with email, gaia and drive modules to export in JSON
+```
+$ ghunt email <email_address> --json user_data.json
+```
+
 
 For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
@@ -76,7 +127,7 @@ For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) r
 ## Social_mapper
 Social Mapper 
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 ```
 ```
@@ -89,7 +140,7 @@ For further help, you may refer to the [social_mapper](https://github.com/Greenw
 ## EXIF Tool
 EXIF Tool is a platform-independent command-line application for reading, writing, and editing meta information in a wide variety of files. This script version is created by David Bombal.
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 
 Create a new EXIF Tool directory and move inside it. 
@@ -122,7 +173,7 @@ PhoneInfoga
 
 For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 ```
 ```
@@ -134,7 +185,7 @@ Osintgram
 
 For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
-### Setup
+### ⚙️ Setup
 Write the following code to install the tool on Kali:
 ```
 ```

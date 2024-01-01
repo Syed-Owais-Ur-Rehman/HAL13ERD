@@ -30,6 +30,9 @@ The following tools used in the project are listed below:
 * [PhoneInfoga](#PhoneInfoga)
 * [Osintgram](#Osintgram)
 
+<br>
+
+
 ## Sherlock
 Sherlock, a powerful command line tool used to find usernames across many social networks.
 

@@ -55,6 +55,9 @@ Use `python3 sherlock --help` to list all possible commands that can be used.
 
 For further help, you may refer to the [Sherlock](https://github.com/sherlock-project/sherlock) repository.
 
+<br>
+
+
 ## theHarvester
 theHarvester performs open source intelligence (OSINT) gathering to help determine
 a domain's external threat landscape. The tool gathers names, emails, IPs, subdomains, and URLs by using multiple public resources.
@@ -68,6 +71,9 @@ sudo apt install theharvester
 Use `theHarvester -h` to list all possible commands that can be used.
 
 For further help, you may refer to [theHarvester](https://www.kali.org/tools/theharvester/).
+
+<br>
+
 
 ## GHunt
 GHunt is an offensive Google framework, currently focused on OSINT. It is used to extract Gmail ID details.
@@ -135,6 +141,8 @@ ghunt email <email_address> --json user_data.json
 
 For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
+<br>
+
 
 ## social_mapper
 Social Mapper is an Open Source Intelligence Tool that uses facial recognition to correlate social media profiles across different sites on a large scale. 
@@ -178,6 +186,7 @@ Paste your target image in the imagefolder(**social_mapper/Input-Examples/imagef
 
 For further help, you may refer to the [social_mapper](https://github.com/Greenwolf/social_mapper) repository.
 
+<br>
 
 
 ## EXIF Tool
@@ -209,12 +218,11 @@ run the following to execute the python script
 python3 exif.py
 Now, check the data of each image using `less exif_data.txt`
 
+<br>
 
 
 ## PhoneInfoga
 PhoneInfoga is an OSINT tool used to scan international phone numbers. It allows you to first gather basic information such as country, area, carrier and line type, then use various techniques to try to find the VoIP provider or identify the owner.
-
-
 
 ### ⚙️ Setup
 Download the latest release of PhoneInfoga:
@@ -243,6 +251,9 @@ phoneinfoga scan -n "+1 555-444-3333"
 For further help, you may refer to the 
 * [PhoneInfoga GitHub](https://github.com/sundowndev/phoneinfoga) repository.
 * [PhoneInfoga Website](https://sundowndev.github.io/phoneinfoga/getting-started/install/).
+
+<br>
+
 
 ## Osintgram
 Osintgram is an OSINT tool on Instagram. It offers an interactive shell to perform analysis on the Instagram account of any user by its nickname.

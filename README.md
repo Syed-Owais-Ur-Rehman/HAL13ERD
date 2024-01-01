@@ -25,7 +25,7 @@ The following tools used in the project are listed below:
 * [Sherlock](#Sherlock)
 * [TheHarvester](#theHarvester)
 * [GHunt](#GHunt)
-* [Social_Mapper](#Social_mapper)
+* [Social_Mapper](#social_mapper)
 * [EXIF Tool](#EXIF-Tool)
 * [PhoneInfoga](#PhoneInfoga)
 * [Osintgram](#Osintgram)
@@ -136,7 +136,7 @@ ghunt email <email_address> --json user_data.json
 For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
 
-## Social_mapper
+## social_mapper
 Social Mapper is an Open Source Intelligence Tool that uses facial recognition to correlate social media profiles across different sites on a large scale. 
 
 ### ⚙️ Setup

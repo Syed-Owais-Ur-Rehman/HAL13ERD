@@ -23,20 +23,33 @@ The following tools used in the project are listed below:
 ## Sherlock
 Sherlock 
 
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
 ### Setup
 Write the following code to install the tool on Kali:
-```
-```
-Use ``
 
+clone the repo
+```
+git clone https://github.com/sherlock-project/sherlock.git
+```
+
+change the working directory to sherlock
+```
+cd sherlock
+```
+
+install the requirements
+```
+python3 -m pip install -r requirements.txt
+```
+
+Use `python3 sherlock --help` to list all possible commands that can be used.
+
+For further help, you may refer to the [Sherlock](https://github.com/sherlock-project/sherlock) repository.
 
 ## theHarvester
 theHarvester performs open source intelligence (OSINT) gathering to help determine
 a domain's external threat landscape. The tool gathers names, emails, IPs, subdomains, and URLs by using multiple public resources.
 
-For further help, you may refer to [theHarvester](https://www.kali.org/tools/theharvester/).
 
 ### Setup
 Write the following code to install the tool on Kali:
@@ -45,36 +58,37 @@ sudo apt install theharvester
 ```
 Use `theHarvester -h` to list all possible commands that can be used.
 
+For further help, you may refer to [theHarvester](https://www.kali.org/tools/theharvester/).
 
 ## GHunt
 GHunt
 
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
+
 
 ### Setup
 Write the following code to install the tool on Kali:
 ```
 ```
 Use ``
+
+For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
 
 ## Social_mapper
 Social Mapper 
 
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
-
 ### Setup
 Write the following code to install the tool on Kali:
 ```
 ```
 Use ``
 
+For further help, you may refer to the [social_mapper](https://github.com/Greenwolf/social_mapper) repository.
+
 
 
 ## EXIF Tool
 EXIF Tool
-
-For further help, you may refer to the [GHunt](https://github.com/mxrch/GHunt) repository.
 
 ### Setup
 Write the following code to install the tool on Kali:
